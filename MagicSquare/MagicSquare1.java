@@ -55,9 +55,9 @@ public class MagicSquare1 {
                 output += "\n";
         }
         if(isMagicSquare())
-            output += "MAGIC SQUARE";
+            output += "MAGIC SQUARE\n";
         else 
-            output += "NOT MAGIC SQUARE";
+            output += "NOT MAGIC SQUARE\n";
         return output;
     }
 

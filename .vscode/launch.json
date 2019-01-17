@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MagicSquareRunner",
+            "request": "launch",
+            "mainClass": "MagicSquareRunner",
+            "projectName": "CompSci3_50ffe39b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MagicSquare1Runner",
             "request": "launch",
             "mainClass": "MagicSquare1Runner",
