@@ -19,11 +19,15 @@ public class PalinList
 
 	public PalinList()
 	{
+		queue = new LinkedList<>();
+		stack = new Stack<>();
 		setList("");
 	}
 
 	public PalinList(String list)
 	{
+		queue = new LinkedList<>();
+		stack = new Stack<>();
 		setList(list);
 	}
 

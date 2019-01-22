@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//ï¿½ A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -  
 //Class -
@@ -15,10 +15,6 @@ public class IntQueue
 {
 	//pick your storage for the queue
 	//you can use the an array or an ArrayList
-
-	//option 1
-	private int[] rayOfInts;
-	private int numInts;
 
 	//option 2
 	private ArrayList<Integer> listOfInts;

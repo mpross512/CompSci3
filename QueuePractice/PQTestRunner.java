@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//ï¿½ A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -8,6 +8,7 @@ public class PQTestRunner
 {
 	public static void main ( String[] args )
 	{
-		//add test cases		
+		PQTester pqTester = new PQTester("one two three four five six seven");
+		System.out.println(pqTester);		
 	}
 }

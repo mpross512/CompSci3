@@ -2,30 +2,9 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - PalinListRunner",
+            "name": "CodeLens (Launch) - PQTestRunner",
             "request": "launch",
-            "mainClass": "PalinListRunner",
-            "projectName": "CompSci3_50ffe39b"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - MagicSquareRunner",
-            "request": "launch",
-            "mainClass": "MagicSquareRunner",
-            "projectName": "CompSci3_50ffe39b"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - MagicSquare1Runner",
-            "request": "launch",
-            "mainClass": "MagicSquare1Runner",
-            "projectName": "CompSci3_50ffe39b"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - MagicSquare1",
-            "request": "launch",
-            "mainClass": "MagicSquare1",
+            "mainClass": "PQTestRunner",
             "projectName": "CompSci3_50ffe39b"
         }
     ]
