@@ -24,3 +24,5 @@ hs_err_pid*
 
 #vscode files
 *.vscode
+*.code-workspace
+launch.json
