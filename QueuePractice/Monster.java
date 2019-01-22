@@ -1,4 +1,4 @@
-public class Monster {
+public class Monster implements Comparable<Monster> {
 
     private int height;
     private int weight;
@@ -53,6 +53,10 @@ public class Monster {
     }
 
     public int compareTo(Monster monster) {
-        return (this.height + this.weight + this.age) - (monster.getHeight() + monster.getWeight() + monster.getAge());
+        return ((this.age - monster.age) * 3) + ((this.weight - monster.weight) * 2) + (this.height - monster.height);
+    }
+
+    public String toString() {
+        return age + " " + weight + " " + height;
     }
 }
