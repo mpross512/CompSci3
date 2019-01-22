@@ -21,29 +21,33 @@ public class IntQueue
 
 	public IntQueue()
 	{
+		listOfInts = new ArrayList<>();
 	}
 
 	public void add(int item)
 	{
+		listOfInts.add(item);
 	}
 
 	public int remove()
 	{
+		if(listOfInts.size() > 0)
+			return listOfInts.remove(0);
 		return 0;
 	}
 
 	public boolean isEmpty()
 	{
-		return false;
+		return listOfInts.size() == 0;
 	}
 
 	public int peek()
 	{
-		return 0;
+		return listOfInts.get(0);
 	}
 
 	public String toString()
 	{
-		return "";
+		return listOfInts.toString();
 	}
 }
