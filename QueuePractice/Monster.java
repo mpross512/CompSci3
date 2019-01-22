@@ -46,5 +46,13 @@ public class Monster {
         return age;
     }
 
-    
+    public boolean equals(Object o) {
+        if(o.getClass() == Monster.class)
+            return (compareTo((Monster) o) == 0);
+        return false;
+    }
+
+    public int compareTo(Monster monster) {
+        return (this.height + this.weight + this.age) - (monster.getHeight() + monster.getWeight() + monster.getAge());
+    }
 }
