@@ -61,17 +61,36 @@ public class MathSet
 
 	public Set<Integer> differenceAMinusB()
 	{
-		return null;
+		Set<Integer> difference = new TreeSet<Integer>();
+		Set<Integer> newB = new TreeSet<>();
+		for(int i : two)
+			newB.add(i);
+		for(int i : one)
+			if(newB.add(i))
+				difference.add(i);
+		return difference;
 	}
 
 	public Set<Integer> differenceBMinusA()
 	{
-		return null;
+		Set<Integer> difference = new TreeSet<Integer>();
+		Set<Integer> newA = new TreeSet<>();
+		for(int i : one)
+			newA.add(i);
+		for(int i : two)
+			if(newA.add(i))
+				difference.add(i);
+		return difference;
 	}
 	
 	public Set<Integer> symmetricDifference()
 	{		
-		return null;
+		Set<Integer> difference = new TreeSet<Integer>();
+		for(int i : differenceAMinusB())
+			difference.add(i);
+		for(int i : differenceBMinusA())
+			difference.add(i);
+		return difference;
 	}	
 	
 	public String toString()
