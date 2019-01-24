@@ -7,8 +7,6 @@
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.Arrays;
-import java.util.ArrayList;
-import static java.lang.System.*;
 
 public class UniquesDupes
 {

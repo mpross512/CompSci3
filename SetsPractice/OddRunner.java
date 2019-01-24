@@ -7,7 +7,6 @@
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
-import static java.lang.System.*;
 
 public class OddRunner
 {
@@ -17,5 +16,6 @@ public class OddRunner
 		while(file.hasNextLine()) {
 			System.out.println(new OddEvenSets(file.nextLine()));
 		}				
+		file.close();
 	}
 }

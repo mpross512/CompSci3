@@ -7,11 +7,6 @@
 import java.util.Set;
 import java.util.TreeSet;
 
-import com.sun.source.tree.Tree;
-
-import java.util.Arrays;
-import static java.lang.System.*;
-
 public class MathSet
 {
 	private Set<Integer> one;

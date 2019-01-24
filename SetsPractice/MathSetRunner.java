@@ -7,9 +7,7 @@
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
-import java.util.concurrent.CountDownLatch;
 
-import static java.lang.System.*;
 
 public class MathSetRunner
 {
@@ -33,5 +31,7 @@ public class MathSetRunner
 			  + "\nsymmetric difference - " + set.symmetricDifference()
 			  + "\n\n");
 		}
+
+		file.close();
 	}
 }

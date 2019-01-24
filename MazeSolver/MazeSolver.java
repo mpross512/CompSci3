@@ -19,9 +19,13 @@ public class MazeSolver {
                     lineOne.charAt(c + 1) == ' ',
                     lineThree.charAt(c+1) == ' ',
                     lineTwo.charAt(c) == ' ',
-                    lineTwo.charAt(c + 2) == ' '
+                    lineTwo.charAt(c + 2) == ' ',
+                    c, r
                 );
-
+                if(lineTwo.charAt(c + 1) == '*')
+                    maze[r][c/2].setCellType(Cell.CellType.BEGINNING);
+                if(lineTwo.charAt(c + 1) == 'O')
+                    maze[r][c/2].setCellType(Cell.CellType.END);
             }
             if(r != maze.length - 1) {
                 lineOne = lineThree;
@@ -30,7 +34,11 @@ public class MazeSolver {
             }
         }
 
+        file.close();
+
+
         Maze bigMaze = new Maze(maze);
+        bigMaze.solve();
         System.out.println(bigMaze);
 
     }
