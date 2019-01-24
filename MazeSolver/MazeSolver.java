@@ -30,7 +30,6 @@ public class MazeSolver {
                     maze[r][c/2].setCellType(Cell.CellType.END);
             }
             if(r != maze.length - 1) {
-                System.out.println(r);
                 lineOne = lineThree;
                 lineTwo = file.nextLine();
                 lineThree = file.nextLine();
