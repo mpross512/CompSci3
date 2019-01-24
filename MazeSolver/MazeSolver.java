@@ -5,9 +5,11 @@ import java.io.File;
 public class MazeSolver {
 
     public static void main(String[] args) throws IOException{
-        Scanner file = new Scanner(new File("bigmaze3.txt"));
+        Scanner file = new Scanner(new File("bigmaze5.txt"));
+        int col = file.nextInt();
+        int row = file.nextInt();
 
-        Cell[][] maze = new Cell[file.nextInt()][file.nextInt()];
+        Cell[][] maze = new Cell[row][col];
         file.nextLine();
 
 
@@ -20,7 +22,7 @@ public class MazeSolver {
                     lineThree.charAt(c+1) == ' ',
                     lineTwo.charAt(c) == ' ',
                     lineTwo.charAt(c + 2) == ' ',
-                    c, r
+                    c/2, r
                 );
                 if(lineTwo.charAt(c + 1) == '*')
                     maze[r][c/2].setCellType(Cell.CellType.BEGINNING);
@@ -28,6 +30,7 @@ public class MazeSolver {
                     maze[r][c/2].setCellType(Cell.CellType.END);
             }
             if(r != maze.length - 1) {
+                System.out.println(r);
                 lineOne = lineThree;
                 lineTwo = file.nextLine();
                 lineThree = file.nextLine();
@@ -39,8 +42,6 @@ public class MazeSolver {
 
         Maze bigMaze = new Maze(maze);
         bigMaze.solve();
-        System.out.println(bigMaze);
-
     }
 
 }
