@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Random;
 import java.util.Set;
 import java.util.Stack;
 import java.util.TreeSet;
@@ -13,7 +12,6 @@ public class Maze {
     private int currentX, currentY, targetX, targetY;
     private Stack<Cell> currentPath;
     private Set<Cell> badCells;
-    private Random rand;
 
     public Maze() {
         currentX = 0;
@@ -23,7 +21,6 @@ public class Maze {
 
         currentPath = new Stack<>();
         badCells = new TreeSet<>();
-        rand = new Random();
         maze = new Cell[0][0];
     }
 
@@ -89,6 +86,8 @@ public class Maze {
 
 
         }
+
+        scanner.close();
         
     }
 
