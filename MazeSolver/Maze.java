@@ -91,6 +91,10 @@ public class Maze {
         
     }
 
+    public Cell[][] solveRecursively(Cell[][] maze) {
+        return maze;
+    }
+
     public String toString() {
         String output = "";
         for(int r = 0; r < maze.length; r++) {
