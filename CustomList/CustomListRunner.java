@@ -36,8 +36,8 @@ public class CustomListRunner
         listy.set(6,"kiwi");
         System.out.println("size = "  + listy.size() + "  " + listy);
         
-        System.out.println("\ngetting position 5");
-        System.out.println("position 5 = "  + listy.get(5));
+        System.out.println("\ngetting position 6");
+        System.out.println("position 6 = "  + listy.get(6));
         
         System.out.println("\ngetting position 1");
         System.out.println("position 1 = "  + listy.get(1));

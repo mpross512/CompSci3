@@ -22,7 +22,7 @@ public class CustomList {
         int count = 0;
         ListObject reference = baseContent;
         ListObject prevRef = null;
-        while(reference.getNextReference() != null) {
+        while(reference != null) {
             if(index == count) {
                 ListObject newContent = new ListObject(content);
                 newContent.setNextReference(reference);
@@ -42,7 +42,7 @@ public class CustomList {
     public String get(int index) {
         int count = 0;
         ListObject reference = baseContent;
-        while(reference.getNextReference() != null) {
+        while(reference != null) {
             if(index == count)
                 return reference.getContent();
             reference = reference.getNextReference();
@@ -65,7 +65,15 @@ public class CustomList {
     }
 
     public void remove(int index) {
-
+        ListObject reference = baseContent;
+        if(index == 0)
+            baseContent = baseContent.getNextReference();
+        else {
+            for(int i = 1; i < index; i++) {
+                reference = reference.getNextReference();
+            }
+            reference.setNextReference(reference.getNextReference().getNextReference());
+        }
     }
 
     public int size() {
