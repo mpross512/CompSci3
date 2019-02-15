@@ -10,6 +10,7 @@ public class CustomListRunner
         listy.add("dragonFruit");
         System.out.println("size = " + listy.size() + "  " + listy);
         
+        
         System.out.println("\nadding eggplant at position 0");
         listy.add(0,"eggplant");
         System.out.println("size = " + listy.size() + "  " + listy);
@@ -22,6 +23,7 @@ public class CustomListRunner
         listy.add(3,"grapefruit");
         System.out.println("size = "  + listy.size() + "  " + listy);
         
+        
         System.out.println("\nsetting position 0 to lettuce");
         listy.set(0,"lettuce");
         System.out.println("size = "  + listy.size() + "  " + listy);
@@ -30,8 +32,8 @@ public class CustomListRunner
         listy.set(1,"tomato");
         System.out.println("size = "  + listy.size() + "  " + listy);
         
-        System.out.println("\nsetting position 2 to kiwi");
-        listy.set(2,"kiwi");
+        System.out.println("\nsetting position 6 to kiwi");
+        listy.set(6,"kiwi");
         System.out.println("size = "  + listy.size() + "  " + listy);
         
         System.out.println("\ngetting position 5");
@@ -51,5 +53,6 @@ public class CustomListRunner
         System.out.println("\nremoving position 3");
         listy.remove(3);
         System.out.println("size = "  + listy.size() + "  " + listy);
+        
     }
 }
